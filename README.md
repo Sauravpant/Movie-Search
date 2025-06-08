@@ -1,54 +1,60 @@
-# React + TypeScript + Vite
+<h1 align="center" id="title">Movie Search</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p id="description">This project is a React-based web application that allows users to search for movies and series using the OMDb API. Users can filter results by type (movies series favorites) and mark movies as favorites which are saved in the browser’s local storage for persistence</p>
 
-Currently, two official plugins are available:
+  
+![Project Demo](./public/demo-image.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  
+<h2>🧐 Features</h2>
 
-## Expanding the ESLint configuration
+Here're some of the project's best features:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+*   Movie Search: Users can search for movies or series by entering keywords.
+*   Favorites Management: Users can add or remove movies from their favorites list. Favorites are saved in local storage to keep them across sessions.
+*   Responsive UI: The app has a clean and responsive layout that works well on different devices.
+*   Error Handling & Loading States: Shows user-friendly messages when no movies are found or when loading data.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. Clone the repository</p>
+
+```
+git clone https://github.com/Sauravpant/Movie-Search.git
+```
+<p>2. Navigate to project folder</p>
+
+```
+cd Movie-Search
+```
+<p>3. Install the dependencies</p>
+
+```
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+<p>4. Set up an .env file in the root folder (Same level as package.json)</p>
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
 ```
+VITE_OMDB_API_KEY=your_omdb_api_key
+```
+
+```
+VITE_OMDB_API_URL=http://www.omdbapi.com/
+```
+
+<p>5. Run the app locally</p>
+
+```
+npm run dev
+```
+
+  
+  
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+*   TypeScript
+*   React.js
+*   TailwindCSS
