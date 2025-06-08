@@ -51,7 +51,7 @@ const App = () => {
   return (
     <MainLayout>
       <MovieSearch onSearch={search} loading={loading} />
-      {loading && <LoadingSpinner />} //Conditional rendering
+      {loading && <LoadingSpinner />}
       {error && <ErrorMessage message={error} />}
       {movies.length > 0 && (
         <FilterControls
